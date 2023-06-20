@@ -26,8 +26,8 @@ type Checked = DropdownMenuCheckboxItemProps["checked"]
 
 const CountryList = ({ countries }: CountryListProps) => {
   const [sort, setSort] = useState(false)
-  const [filterArea, setFilterArea] = React.useState<Checked>(false)
-  const [filterRegion, setFilterRegion] = React.useState<Checked>(false)
+  const [filterArea, setFilterArea] = useState<Checked>(false)
+  const [filterRegion, setFilterRegion] = useState<Checked>(false)
   const [currentPage, setCurrentPage] = useState(1)
   const [countriesPerPage] = useState(10)
   const [filteredCountries, setFilteredCountries] = useState<Country[]>([])
