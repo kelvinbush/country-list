@@ -1,5 +1,5 @@
 type Country = {
-  name: string;
-  region: string;
-  area: number;
+  name: string
+  region: string
+  area: number
 }
