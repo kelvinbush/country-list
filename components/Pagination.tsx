@@ -28,7 +28,9 @@ export default function Pagination({
         </span>{" "}
         to{" "}
         <span className="font-semibold text-gray-900 dark:text-white">
-          {currentPage * countriesPerPage}
+          {currentPage * countriesPerPage > totalCountries
+            ? totalCountries
+            : currentPage * countriesPerPage}
         </span>{" "}
         of{" "}
         <span className="font-semibold text-gray-900 dark:text-white">

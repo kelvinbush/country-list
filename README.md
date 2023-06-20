@@ -1,14 +1,13 @@
 # country-list
 
 A sleek and efficient web page developed using Next.js 13, Radix UI, Tailwind CSS, and TypeScript. This project allows
-users to effortlessly browse and explore a comprehensive list of countries. With its key features including Static Site
-Generation (SSG), pagination, filtering, and sorting, the web page offers a seamless and intuitive user experience.
+users to effortlessly browse and explore a comprehensive list of countries. With its key features including Server Components, pagination, filtering, and sorting, the web page offers a seamless and intuitive user experience.
 
 
 ## Features
 
 - Next.js 13 App Directory
-- SSG with `getStaticProps`
+- Server Components
 - Radix UI Primitives
 - Tailwind CSS
 - Icons from [Lucide](https://lucide.dev)

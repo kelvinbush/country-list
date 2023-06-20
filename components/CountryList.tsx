@@ -3,7 +3,6 @@
 import React, { useCallback, useEffect, useState } from "react"
 import { DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu"
 
-import getAllCountries from "@/lib/getAllCountries"
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -131,15 +130,3 @@ const CountryList = ({ countries }: CountryListProps) => {
 }
 
 export default CountryList
-
-export async function getStaticProps() {
-  const countriesData: Promise<Country[]> = getAllCountries()
-
-  const countries = await countriesData
-
-  return {
-    props: {
-      countries,
-    },
-  }
-}
