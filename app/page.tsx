@@ -1,10 +1,11 @@
 import getAllCountries from "@/lib/getAllCountries";
-import CountryCard from "@/components/CountryCard";
+import CountryList from "@/components/CountryList";
 
 export default async function IndexPage() {
   const countriesData: Promise<Country[]> = getAllCountries();
 
   const countries = await countriesData;
+
 
   return (
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
@@ -13,11 +14,7 @@ export default async function IndexPage() {
         <p className="text-gray-500">
           A list of countries and their basic information.
         </p>
-        {
-          countries.map((country) => (
-            <CountryCard area={country.area} name={country.name} region={country.region}/>
-          ))
-        }
+        <CountryList countries={countries}/>
       </div>
     </section>
   )
