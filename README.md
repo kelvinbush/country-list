@@ -4,11 +4,6 @@ A sleek and efficient web page developed using Next.js 13, Radix UI, Tailwind CS
 users to effortlessly browse and explore a comprehensive list of countries. With its key features including Static Site
 Generation (SSG), pagination, filtering, and sorting, the web page offers a seamless and intuitive user experience.
 
-## Usage
-
-```bash
-npx create-next-app -e https://github.com/shadcn/next-template
-```
 
 ## Features
 
